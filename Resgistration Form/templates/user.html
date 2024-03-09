@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/user-profile-icon-abstract-blue-background-illustration-dark-blue-digital-texture-grunge-elegant-paint-modern-design-concept-user-167078251.jpg'); 
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Set height to 100% of viewport height */
+        }
+        h1 {
+            color: #007bff; /* Blue color */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #6c757d; /* Gray color */
+        }
+        .details-card {
+            background-color: lightyellow; /* White background for the card */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="details-card"> <!-- Styling for the details card -->
+                    <h1 class="text-center mb-4">User Details</h1> <!-- Center align the heading -->
+                    <div class="row">
+                        <div class="col">
+                            <p><strong>Name:</strong> {{ user[1] }}</p>
+                            <p><strong>Email:</strong> {{ user[2] }}</p>
+                            <p><strong>Mobile:</strong> {{ user[3] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Add JavaScript for displaying the alert
+        $(document).ready(function() {
+            // Show alert when the document is ready
+            alert("Registered successfully!");
+        });
+    </script>
+</body>
+</html>
